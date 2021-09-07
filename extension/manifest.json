@@ -1,0 +1,23 @@
+{
+  "name": "ASLtoALL",
+  "description": "Convert AUDIO to ASL real time",
+  "version": "1.0",
+  "manifest_version": 2,
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "http://localhost:5000/socket.io/*",
+    "tabCapture",
+    "tabs",
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_icon": "assets/icon/icon16.png"
+  },
+  "minimum_chrome_version": "71",
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';"
+}
